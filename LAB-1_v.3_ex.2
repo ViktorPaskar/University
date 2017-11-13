@@ -7,37 +7,24 @@
 
 #include <stdio.h>
 #include <conio.h>
-#include <stdlib.h>
 
 int main ()
-{
-  system("chcp 1251");
-  
-  float summ;
-   
-  printf("\n \"Обчислення вартості покупки с урахуванням знижки\" \n");
-  
-  printf("\n Введіть вартість покупки і натисніть <Enter> -> ");
-  	scanf("%f", &summ);
- 
- if (summ < 500)
-   printf("\n Знижка не надається! ");
- else {
- 	printf("\n Вам надається знижка: ");
-  	if (summ > 1000) {
-  	printf("\n 5% \n");
-  	summ = 0.97*summ;
-  	}
-  	else {
-  	printf("\n 3% \n");
-  	summ = 0.97*summ;
-  	};
+{  
+  int discount, summ, tsumm;
+
+  printf ("\n Input your summ: "); // Ввід даних //
+  	scanf ("%d", &summ);
+  	
+  if ( summ < 500 ) // Алгоритм обчислення вартості   покупки   з урахуванням  знижки //
+  	printf ("\n You haven't a discount! ");
+  else 
+       {
+  	  if ( summ > 1000 ) { printf ("\n You discount: 5%%"); discount = 5; tsumm = summ - (discount * summ)/100; }
+	  else { printf ("\n You discount: 3%%"); discount = 3; tsumm = summ - (discount * summ)/100; }
+
+     printf ("\n The total summ = %3.2d", tsumm);
+   }	
     
-    printf("Сума з урахуванням знижки = %3.2f ãðí \n", summ);	
- }
- 
- printf("\n Для завершення натисніть <Enter>");
-  
-	getch();
-	return 0;
+ getch();
+ return 0;
 }
