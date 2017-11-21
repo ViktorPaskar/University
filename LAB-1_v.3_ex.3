@@ -40,19 +40,36 @@ int main (void)
     printf("\n Input x -> ");
  	  scanf("%f", &x);
  	
-    printf( "\n e^( x ) = %lf \n", exp ( x ) );
+    // Перевіка, чи точка А належить R
+    if (x1 = 1/2 * pow(x, 2)) 
+    { printf ("\n The point A doesn't belong to R"); getch(); return 0; }
+    
+    if (x1 = 5 + pow(2.18, x)) 
+    { printf ("\n The point A doesn't belong to R"); getch(); return 0; }
+    
+    if (x1 = 5 + pow(2.18, -x)) 
+    { printf ("\n The point A doesn't belong to R"); getch(); return 0; }
 	
-	if () { printf ("\n The point A doesn't belong to R"); getch(); return 0; }
-	if () { printf ("\n The point A doesn't belong to R"); getch(); return 0; }
-	if () { printf ("\n The point A doesn't belong to R"); getch(); return 0; }
-	
-	if () { printf ("\n The point B doesn't belong to R"); getch(); return 0; }
-	if () { printf ("\n The point B doesn't belong to R"); getch(); return 0; }
-	if () { printf ("\n The point B doesn't belong to R"); getch(); return 0; }
-	
-	if () { printf ("\n The point C doesn't belong to R"); getch(); return 0; }
-	if () { printf ("\n The point C doesn't belong to R"); getch(); return 0; }
-	if () { printf ("\n The point C doesn't belong to R"); getch(); return 0; }
+    // Перевіка, чи точка B належить R
+    if (x2 = 1/2 * pow(x, 2))
+    { printf ("\n The point B doesn't belong to R"); getch(); return 0; }
+    
+    if (x2 = 5 + pow(2.18, x)) 
+    { printf ("\n The point B doesn't belong to R"); getch(); return 0; }
+    
+    if (x2 = 5 + pow(2.18, -x))
+    { printf ("\n The point B doesn't belong to R"); getch(); return 0; }
+    
+    // Перевіка, чи точка C належить R
+    if (x3 = 1/2 * pow(x, 2)) 
+    { printf ("\n The point C doesn't belong to R"); getch(); return 0; }
+    
+    if (x3 = 5 + pow(2.18, x)) 
+    { printf ("\n The point C doesn't belong to R"); getch(); return 0; }
+    
+    if (x3 = 5 + pow(2.18, -x)) 
+    { printf ("\n The point C doesn't belong to R"); getch(); return 0; }
+    
 	
     // Обчислення площі //
     float squareRectangle = fabs (( x2-x1 )*( y3-y1 )-( x3-x1 )*( y2-y1 ))/2;
