@@ -19,8 +19,15 @@ int main ()
   	printf ("\n You haven't a discount! ");
   else 
        {
-  	  if ( summ > 1000 ) { printf ("\n You discount: 5%%"); discount = 5; tsumm = summ - (discount * summ)/100; }
-	  else { printf ("\n You discount: 3%%"); discount = 3; tsumm = summ - (discount * summ)/100; }
+  	  if ( summ > 1000 ) { 
+	  printf ("\n You discount: 5%%");
+	  discount = 5; 
+	  tsumm = summ - (discount * summ)/100; }
+	  
+	  else { 
+	  printf ("\n You discount: 3%%");
+	  discount = 3; 
+	  tsumm = summ - (discount * summ)/100; }
 
      printf ("\n The total summ = %3.2d", tsumm);
    }	
