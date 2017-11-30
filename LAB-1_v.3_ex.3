@@ -5,7 +5,7 @@
 int main (void)
 {
 	
-    float x1, y1;
+    float x, x1, x2, x3, y1, y2, y3;
     
     printf("\n Input point A: \n");
     
@@ -15,7 +15,6 @@ int main (void)
     printf("\n y -> ");
       scanf("%f", &y1);
 
-    float x2, y2;
     
     printf("\n Input point B: \n");
     
@@ -25,7 +24,6 @@ int main (void)
     printf("\n y -> ");
       scanf("%f", &y2);
 
-    float x3, y3;
     
     printf("\n Input point C: \n");
     
@@ -35,39 +33,38 @@ int main (void)
     printf("\n y -> ");
 	  scanf("%f", &y3);
 	  
-    float x;
  	
     printf("\n Input x -> ");
  	  scanf("%f", &x);
  	
     // Перевіка, чи точка А належить R
-    if (x1 = 1/2 * pow(x, 2)) 
+    if (x1 =< 1/2 * pow(x, 2)) 
     { printf ("\n The point A doesn't belong to R"); getch(); return 0; }
     
-    if (x1 = 5 + pow(2.18, x)) 
+    if (x1 >= 5 + pow(2.18, x)) 
     { printf ("\n The point A doesn't belong to R"); getch(); return 0; }
     
-    if (x1 = 5 + pow(2.18, -x)) 
+    if (x1 >= 5 + pow(2.18, -x)) 
     { printf ("\n The point A doesn't belong to R"); getch(); return 0; }
 	
     // Перевіка, чи точка B належить R
-    if (x2 = 1/2 * pow(x, 2))
+    if (x2 =< 1/2 * pow(x, 2))
     { printf ("\n The point B doesn't belong to R"); getch(); return 0; }
     
-    if (x2 = 5 + pow(2.18, x)) 
+    if (x2 >= 5 + pow(2.18, x)) 
     { printf ("\n The point B doesn't belong to R"); getch(); return 0; }
     
-    if (x2 = 5 + pow(2.18, -x))
+    if (x2 >= 5 + pow(2.18, -x))
     { printf ("\n The point B doesn't belong to R"); getch(); return 0; }
     
     // Перевіка, чи точка C належить R
-    if (x3 = 1/2 * pow(x, 2)) 
+    if (x3 =< 1/2 * pow(x, 2)) 
     { printf ("\n The point C doesn't belong to R"); getch(); return 0; }
     
-    if (x3 = 5 + pow(2.18, x)) 
+    if (x3 >= 5 + pow(2.18, x)) 
     { printf ("\n The point C doesn't belong to R"); getch(); return 0; }
     
-    if (x3 = 5 + pow(2.18, -x)) 
+    if (x3 >= 5 + pow(2.18, -x)) 
     { printf ("\n The point C doesn't belong to R"); getch(); return 0; }
     
 	
