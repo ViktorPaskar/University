@@ -1,0 +1,87 @@
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+
+int main (void)
+{
+	
+    float x, x1, x2, x3, y1, y2, y3;
+    
+    printf("\n Input point A: \n");
+    
+    printf("\n x -> ");
+      scanf("%f", &x1);
+      
+    printf("\n y -> ");
+      scanf("%f", &y1);
+
+    
+    printf("\n Input point B: \n");
+    
+    printf("\n x -> ");
+      scanf("%f", &x2);
+      
+    printf("\n y -> ");
+      scanf("%f", &y2);
+
+    
+    printf("\n Input point C: \n");
+    
+    printf("\n x -> ");
+      scanf("%f", &x3);
+      
+    printf("\n y -> ");
+	  scanf("%f", &y3);
+	  
+ 	
+    printf("\n Input x -> ");
+ 	  scanf("%f", &x);
+ 	
+    // Перевіка, чи точка А належить R
+    if (x1 =< 1/2 * pow(x, 2)) 
+    { printf ("\n The point A doesn't belong to R"); getch(); return 0; }
+    
+    if (x1 >= 5 + pow(2.18, x)) 
+    { printf ("\n The point A doesn't belong to R"); getch(); return 0; }
+    
+    if (x1 >= 5 + pow(2.18, -x)) 
+    { printf ("\n The point A doesn't belong to R"); getch(); return 0; }
+	
+    // Перевіка, чи точка B належить R
+    if (x2 =< 1/2 * pow(x, 2))
+    { printf ("\n The point B doesn't belong to R"); getch(); return 0; }
+    
+    if (x2 >= 5 + pow(2.18, x)) 
+    { printf ("\n The point B doesn't belong to R"); getch(); return 0; }
+    
+    if (x2 >= 5 + pow(2.18, -x))
+    { printf ("\n The point B doesn't belong to R"); getch(); return 0; }
+    
+    // Перевіка, чи точка C належить R
+    if (x3 =< 1/2 * pow(x, 2)) 
+    { printf ("\n The point C doesn't belong to R"); getch(); return 0; }
+    
+    if (x3 >= 5 + pow(2.18, x)) 
+    { printf ("\n The point C doesn't belong to R"); getch(); return 0; }
+    
+    if (x3 >= 5 + pow(2.18, -x)) 
+    { printf ("\n The point C doesn't belong to R"); getch(); return 0; }
+    
+	
+    // Обчислення площі //
+    float squareRectangle = fabs (( x2-x1 )*( y3-y1 )-( x3-x1 )*( y2-y1 ))/2;
+    
+    // Перевірка чи лежать точки на одній прямій //
+    if ( squareRectangle==0 )
+    { printf("\n The points are on the same line!"); getch(); return 0; };
+	
+    // Обчислення периметру (Пошук сторін та Формула Герона) //
+    printf("\n Perimeter: %.*f\n",2, sqrt (( x2-x1 ) * ( x2-x1 )+ ( y2-y1 ) * ( y2-y1 )) + sqrt (( x3-x1 ) * ( x3-x1 ) + ( y3-y1 ) * ( y3-y1 )) + sqrt (( x3-x2 ) * ( x3-x2 ) + ( y3-y2 ) * ( y3-y2 )));
+    
+    // Виведення площі //
+    printf("\n Area: %.*f",2, squareRectangle);
+
+	
+    getch();
+    return 0;
+}
