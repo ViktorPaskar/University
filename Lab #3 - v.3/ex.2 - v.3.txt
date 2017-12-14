@@ -1,0 +1,56 @@
+#include <stdlib.h>
+#include <time.h>
+
+int main(void)
+{
+	
+	int X[15] [15];
+	int L[15];
+	int i, j, n, w;
+	
+	system("chcp 1251");
+	
+	printf("Aaaa?ou ?ici?ci??i?nou ianeao");
+		scanf("%d", &n);
+	
+	printf("Aaaa?ou aeaiaioe ianeao ?c eeaa?aoo?e:");
+	
+	printf("\nIao?eoy X:\n");
+	
+	for(i=1;i<=n; i++) 
+	{
+		for(j=1; j<=n; j++)
+		{
+			printf("X [%d] [%d]= ", i, j);
+				scanf("%d", &X[i] [j]); 
+ 		}
+ 		printf("\n");
+	}
+	printf("\n");
+		
+	for(i=1;i<=n;i++)
+	{
+		w=0;
+		for(j=1; j<=n; j++) 
+			{
+				if(X[i] [j]>b[i] [j])
+					{
+						w++;
+					}
+			}
+		if(w==n)
+			{
+				L[i]=true;
+				printf("L[%d] = %d;", i, L[i]);
+			}
+		else
+			{
+				L[i]=false;
+				printf("L[%d] = %d;", i, L[i]);
+			}
+		
+	}
+	
+	getch();
+	return 0;
+}
